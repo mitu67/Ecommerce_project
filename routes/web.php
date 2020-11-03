@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('test', function () {
     return " welcome to new project";
 });
+
+
+// template set.
+Route::get('index' , 'AdminPagesController@index')->name('index');
+
+
+
+Route::get('products' , 'ProductsController@index')->name('products');
