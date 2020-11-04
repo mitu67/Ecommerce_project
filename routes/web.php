@@ -25,6 +25,12 @@ Route::get('test', function () {
 // template set.
 Route::get('index' , 'AdminPagesController@index')->name('index');
 
+Route::get('dashboard' , 'DashboardController@index')->name('dashboard');
+Route::get('users' , 'DashboardController@index')->name('users');
+Route::get('groups' , 'DashboardController@index')->name('groups');
+Route::get('categories' , 'DashboardController@index')->name('categories');
 
 
-Route::get('products' , 'ProductsController@index')->name('products');
+
+Route::resource('products' , 'ProductsController');
+

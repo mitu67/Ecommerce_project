@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Star Admin Premium Bootstrap Admin Dashboard Template</title>
+    <title>Ecommerce </title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendors/iconfonts/ionicons/dist/css/ionicons.css">
@@ -22,6 +22,30 @@
     <link rel="stylesheet" href="{{asset('assets/css/demo_1/style.css') }}">
     <!-- End Layout styles -->
     <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico') }}" />
+
+
+      <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="{{asset('assets/css/shared/style.css') }}">
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="{{asset('assets/css/demo_1/style.css') }}">
+    <!-- End Layout styles -->
+    <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico') }}" />
+
+<!-- font awesome -->
+    <link rel="stylesheet" href="{{asset('assets/vendors/iconfonts/font-awesome/css/font-awesome.min.css') }}" />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="{{asset('assets/css/shared/style.css') }}">
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="{{asset('assets/css/demo_1/style.css') }}">
+    <!-- End Layout styles -->
+    <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico') }}" />
+
+    <link rel="stylesheet" href="{{asset('assets/css/style.css') }}">
 
 
   
@@ -199,7 +223,7 @@
             </li>
             <li class="nav-item nav-category">Main Menu</li>
             <li class="nav-item">
-              <a class="nav-link" href="../../index.html">
+              <a class="nav-link" href="{{ route('dashboard') }}">
                 <i class="menu-icon typcn typcn-document-text"></i>
                 <span class="menu-title">Dashboard</span>
               </a>
@@ -214,10 +238,10 @@
               <div class="collapse" id="ui-basic1">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/ui-features/buttons.html">users</a>
+                    <a class="nav-link" href="{{ route('users') }}">users</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Groups</a>
+                    <a class="nav-link" href="{{ route('groups') }}">Groups</a>
                   </li>
                  
                 </ul>
@@ -233,10 +257,10 @@
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/ui-features/buttons.html">Products</a>
+                    <a class="nav-link" href="{{ route('products.index') }}">Products</a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Categories</a>
+                  <a class="nav-link" href="{{ route('categories') }}">Categories</a>
                   </li>
                 </ul>
               </div>
@@ -276,6 +300,16 @@
         <div class="main-panel">
 
           <div class="content-wrapper"> 
+
+
+                @if( Session('message'))
+
+                <div class="alert alert-success" role="alert">
+                    {{ Session('message') }}
+                 </div>
+
+                 @endif
+           
 
            @yield('blank')
 
@@ -328,5 +362,28 @@
 
   <!-- Page level custom scripts -->
   <script src="{{asset('assets/js/demo/datatables-demo.js') }}"></script>
+
+
+<!-- table js -->
+
+
+     <script src="{{ asset('assets/vendors/js/vendor.bundle.base.js')}}"></script>
+    <script src="{{ asset('assets/vendors/js/vendor.bundle.addons.js')}}"></script>
+
+    <script src="{{ asset('assets/js/shared/off-canvas.js')}}"></script>
+    <script src="{{ asset('assets/js/shared/misc.js')}}"></script>
+
+
+
+    <!-- plugins:js for font awesome -->
+    <script src="{{ asset('assets/vendors/js/vendor.bundle.base.js')}}"></script>
+    <script src="{{ asset('assets/vendors/js/vendor.bundle.addons.js')}}"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="{{ asset('assets/js/shared/off-canvas.js')}}"></script>
+    <script src="{{ asset('assets/js/shared/misc.js')}}"></script>
+    <!-- endinject -->
   </body>
 </html>
