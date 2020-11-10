@@ -6,7 +6,7 @@
 
 			<div class="col-md-8">
 				<div class="widget">
-					<h3>Feature products</h3>
+					<h3>All products</h3>
 					<div class="row">
 
 						@foreach($products as $product)

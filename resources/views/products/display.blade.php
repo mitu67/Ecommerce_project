@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>laravel ecommerce</title>
+  <title>laravel ecommerce</title>
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-	
+  
 
-	<link href="{{asset('assets/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">	
+  <link href="{{asset('assets/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet"> 
 
-	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
 </head>
 <body>
 
-	<div class="wrapper">
-		
+  <div class="wrapper">
+    
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-		<div class="container">
-			
+    <div class="container">
+      
   <a class="navbar-brand" href="{{route('home.index')}}">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-    	<div class="input-group mb-3">
+      <div class="input-group mb-3">
   <input type="text" class="form-control" placeholder="Search Products" aria-label="Recipient's username" aria-describedby="button-addon2">
   <div class="input-group-append">
     <button class="btn btn-outline-secondary" type="button" id="button-addon2">search</button>
@@ -60,14 +60,14 @@
 
 
 <div class="container margin-top">
-	<div class="row">
-		<div class="col-md-4">
-		<ul class="list-group">
-			  <li class="list-group-item">First item</li>
-			  <li class="list-group-item">Second item</li>
-			  <li class="list-group-item">Third item</li>
-			</ul>
-		</div>
+  <div class="row">
+    <div class="col-md-4">
+    <ul class="list-group">
+        <li class="list-group-item">First item</li>
+        <li class="list-group-item">Second item</li>
+        <li class="list-group-item">Third item</li>
+      </ul>
+    </div>
 
 
 
@@ -75,11 +75,11 @@
 
 
 <footer class="footer-bottom">
-	<p class="text-center">@copyright ; 2020 All right reserved</p>
+  <p class="text-center">@copyright ; 2020 All right reserved</p>
 </footer>
 
 
-	</div>
+  </div>
 
 
 

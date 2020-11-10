@@ -62,6 +62,7 @@
         </div>
 
         <div class="navbar-menu-wrapper d-flex align-items-center">
+         
           <ul class="navbar-nav">
             <li class="nav-item font-weight-semibold d-none d-lg-block">Help : +050 2992 709</li>
             <li class="nav-item dropdown language-dropdown">
@@ -97,6 +98,7 @@
               </div>
             </li>
           </ul>
+          
           <form class="ml-auto search-form d-none d-md-block" action="#">
             <div class="form-group">
               <input type="search" class="form-control" placeholder="Search Here">
@@ -260,7 +262,10 @@
                     <a class="nav-link" href="{{ route('products.index') }}">Products</a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="{{ route('categories') }}">Categories</a>
+                  <a class="nav-link" href="{{ route('categories.index') }}">Categories</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="{{ route('display') }}">Display</a>
                   </li>
                 </ul>
               </div>

@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Session;
 use Image;
 
 
-
 class ProductsController extends Controller
 {
     /**
@@ -85,8 +84,7 @@ class ProductsController extends Controller
         }
      */
 
-
-        if (count($request->product_image) >0 ) {
+        if(count($request->product_image) >0 ) {
             
             foreach ($request->product_image as $image) {
                 
@@ -104,10 +102,7 @@ class ProductsController extends Controller
             $productImage->product_id = $product->id;
             $productImage->image = $img;
 
-            if($productImage->save()){
-                Session::flash('message' , 'Product Created Successfully');
-            }
-
+            $productImage->save();
             }
 
         } 
@@ -151,6 +146,7 @@ class ProductsController extends Controller
         $this->data['headline'] = 'Add new product';
 
         return view('products.form' , $this->data);
+
          
 
     }

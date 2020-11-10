@@ -77,7 +77,7 @@
 				  </div>
 
 				<div class="form-group row">
-				    <label for="product_image" class="col-md-2 text-right col-form-label">Image</label>
+				    <label for="product_image[]" class="col-md-2 text-right col-form-label">Image</label>
 				    
 				    <div class="col-md-10">				    
 

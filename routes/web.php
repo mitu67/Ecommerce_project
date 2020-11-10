@@ -26,6 +26,9 @@ Route::get('test', function () {
 Route::get('index' , 'AdminPagesController@index')->name('index');
 
 Route::get('dashboard' , 'DashboardController@index')->name('dashboard');
+
+Route::get('index' , 'DashboardController@index')->name('home.index');
+Route::get('contact' , 'DashboardController@index')->name('contact');
 Route::get('users' , 'DashboardController@index')->name('users');
 Route::get('groups' , 'DashboardController@index')->name('groups');
 Route::get('categories' , 'DashboardController@index')->name('categories');
@@ -33,4 +36,9 @@ Route::get('categories' , 'DashboardController@index')->name('categories');
 
 
 Route::resource('products' , 'ProductsController');
+
+Route::get('display' , 'PagesController@display')->name('display');
+
+
+Route::resource('categories' , 'CategoriesController');
 
