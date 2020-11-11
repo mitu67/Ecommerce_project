@@ -8,6 +8,7 @@ use App\productImage;
 
 use Illuminate\Support\Facades\Session;
 use Image;
+use Str;
 
 
 
@@ -54,7 +55,7 @@ class ProductsController extends Controller
         $product->price = $request->price;
         $product->quantity = $request->quantity;
        
-        $product->slug = $request->title;
+        $product->slug = str::slug($request->title);
         $product->category_id = 1;
         $product->brand_id = 1;
         $product->admin_id = 1;

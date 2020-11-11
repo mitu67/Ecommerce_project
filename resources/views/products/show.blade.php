@@ -47,7 +47,11 @@
             		</tr>
             		<tr>
             			<th class="text-right">Image:</th>
-            			<td>{{ $product->image }}</td>
+            			<td>
+                            
+                     <img src="{{ asset('img/products/' . $product->images->image ) }}" width= "100">
+
+                        </td>
             		</tr>
             		
             	</table>

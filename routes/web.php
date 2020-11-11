@@ -21,7 +21,6 @@ Route::get('test', function () {
     return " welcome to new project";
 });
 
-
 // template set.
 Route::get('index' , 'AdminPagesController@index')->name('index');
 
@@ -37,7 +36,11 @@ Route::get('categories' , 'DashboardController@index')->name('categories');
 
 Route::resource('products' , 'ProductsController');
 
+
 Route::get('display' , 'PagesController@display')->name('display');
+Route::get('product/{slug}' , 'PagesController@show')->name('product.show'); 
+Route::get('search' , 'PagesController@search')->name('search'); 
+
 
 
 Route::resource('categories' , 'CategoriesController');

@@ -6,7 +6,7 @@
 
 			<div class="col-md-8">
 				<div class="widget">
-					<h3>All products</h3>
+					<h3>Searched products for - <span class="badge badge-primary">{{ $search }} </span></h3>
 					<div class="row">
 
 						@foreach($products as $product)
